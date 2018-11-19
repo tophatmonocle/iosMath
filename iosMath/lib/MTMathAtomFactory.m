@@ -76,7 +76,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     return [[MTLargeOperator alloc] initWithValue:name limits:limits];
 }
 
-+ (nullable MTMathAtom *)atomForCharacter:(unichar)ch
++ (MTMathAtom *)atomForCharacter:(unichar)ch
 {
     NSString *chStr = [NSString stringWithCharacters:&ch length:1];
     if (ch == '$' || ch == '%' || ch == '#' || ch == '&' || ch == '~' || ch == '\'') {
@@ -127,7 +127,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     return list;
 }
 
-+ (nullable MTMathAtom *)atomForLatexSymbolName:(NSString *)symbolName
++ (MTMathAtom *)atomForLatexSymbolName:(NSString *)symbolName
 {
     NSParameterAssert(symbolName);
     NSDictionary* aliases = [MTMathAtomFactory aliases];
@@ -147,7 +147,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     return nil;
 }
 
-+ (nullable NSString*) latexSymbolNameForAtom:(MTMathAtom*) atom
++ (NSString*) latexSymbolNameForAtom:(MTMathAtom*) atom
 {
     if (atom.nucleus.length == 0) {
         return nil;
@@ -174,7 +174,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     return commands.allKeys;
 }
 
-+ (nullable MTAccent*) accentWithName:(NSString*) accentName
++ (MTAccent*) accentWithName:(NSString*) accentName
 {
     NSDictionary<NSString*, NSString*> *accents = [MTMathAtomFactory accents];
     NSString* accentValue = accents[accentName];
@@ -191,7 +191,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     return dict[accent.nucleus];
 }
 
-+ (nullable MTMathAtom *)boundaryAtomForDelimiterName:(NSString *)delimName
++ (MTMathAtom *)boundaryAtomForDelimiterName:(NSString *)delimName
 {
     NSDictionary<NSString*, NSString*>* delims = [MTMathAtomFactory delimiters];
     NSString* delimValue = delims[delimName];
@@ -213,7 +213,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
 + (MTFontStyle)fontStyleWithName:(NSString *)fontName {
     NSDictionary<NSString*, NSNumber*>* fontStyles = [self fontStyles];
     NSNumber* style = fontStyles[fontName];
-    if (style == nil) {
+    if (!style) {
         return NSNotFound;
     }
     return style.integerValue;
@@ -269,7 +269,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     return [self fractionWithNumerator:num denominator:denom];
 }
 
-+ (nullable MTMathAtom *)tableWithEnvironment:(NSString *)env rows:(NSArray<NSArray<MTMathList *> *> *)rows error:(NSError * _Nullable __autoreleasing *)error
++ (MTMathAtom *)tableWithEnvironment:(NSString *)env rows:(NSArray<NSArray<MTMathList *> *> *)rows error:(NSError * _Nullable __autoreleasing *)error
 {
     MTMathTable* table = [[MTMathTable alloc] initWithEnvironment:env];
     for (int i = 0; i < rows.count; i++) {
@@ -323,9 +323,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     } else if ([env isEqualToString:@"eqalign"] || [env isEqualToString:@"split"] || [env isEqualToString:@"aligned"]) {
         if (table.numColumns != 2) {
             NSString* message = [NSString stringWithFormat:@"%@ environment can only have 2 columns", env];
-            if (error != nil) {
-                *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
-            }
+            *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
             return nil;
         }
         // Add a spacer before each of the second column elements. This is to create the correct spacing for = and other releations.
@@ -344,9 +342,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     } else if ([env isEqualToString:@"displaylines"] || [env isEqualToString:@"gather"]) {
         if (table.numColumns != 1) {
             NSString* message = [NSString stringWithFormat:@"%@ environment can only have 1 column", env];
-            if (error != nil) {
-                *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
-            }
+            *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
             return nil;
         }
         table.interRowAdditionalSpacing = 1;
@@ -356,9 +352,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     } else if ([env isEqualToString:@"eqnarray"]) {
         if (table.numColumns != 3) {
             NSString* message = @"eqnarray environment can only have 3 columns";
-            if (error != nil) {
-                *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
-            }
+            *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
             return nil;
         }
         table.interRowAdditionalSpacing = 1;
@@ -370,9 +364,7 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
     } else if ([env isEqualToString:@"cases"]) {
         if (table.numColumns != 2) {
             NSString* message = @"cases environment can only have 2 columns";
-            if (error != nil) {
-                *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
-            }
+            *error = [NSError errorWithDomain:MTParseError code:MTParseErrorInvalidNumColumns userInfo:@{ NSLocalizedDescriptionKey : message }];
             return nil;
         }
         table.interRowAdditionalSpacing = 0;
