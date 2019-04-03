@@ -13,6 +13,8 @@
 
 #import "MTMathList.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 FOUNDATION_EXPORT NSString *const MTSymbolMultiplication;
 FOUNDATION_EXPORT NSString *const MTSymbolDivision;
 FOUNDATION_EXPORT NSString *const MTSymbolFractionSlash;
@@ -142,7 +144,8 @@ FOUNDATION_EXPORT NSString *const MTSymbolDegree;
  @note The reason this function returns a `MTMathAtom` and not a `MTMathTable` is because some
  matrix environments are have builtin delimiters added to the table and hence are returned as inner atoms.
  */
-+ (MTMathAtom*) tableWithEnvironment:(nullable NSString*) env rows:(NSArray<NSArray<MTMathList*>*>*) rows error:(NSError**) error;
++ (nullable MTMathAtom*) tableWithEnvironment:(nullable NSString*) env rows:(NSArray<NSArray<MTMathList*>*>*) rows error:(NSError**) error;
 @end
 
+NS_ASSUME_NONNULL_END
 
