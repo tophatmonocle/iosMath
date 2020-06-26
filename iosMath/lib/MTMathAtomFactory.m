@@ -333,7 +333,10 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
         for (int i = 0; i < table.cells.count; i++) {
             NSArray<MTMathList*>* row = table.cells[i];
             if (row.count >= 1) {
-                [row[1] insertAtom:spacer atIndex:0];
+                @try {
+                    [row[1] insertAtom:spacer atIndex:0];
+                }
+                @catch (NSException *exception) {}
             }
         }
         table.interRowAdditionalSpacing = 1;
