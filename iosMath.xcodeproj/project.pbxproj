@@ -36,11 +36,13 @@
 		49DEC8191CF3C69E000053CD /* latinmodern-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DEC8131CF3C69E000053CD /* latinmodern-math.plist */; };
 		49DEC81A1CF3C69E000053CD /* latinmodern-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49DEC8141CF3C69E000053CD /* latinmodern-math.otf */; };
 		49DEC8B71CF77B00000053CD /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8B51CF77B00000053CD /* MTMathListIndex.m */; };
-		49DEC8B81CF77B00000053CD /* MTMathListIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DEC8B61CF77B00000053CD /* MTMathListIndex.h */; };
+		49DEC8B81CF77B00000053CD /* MTMathListIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DEC8B61CF77B00000053CD /* MTMathListIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49EEFD7C1D19B664002D15C4 /* MTTypesetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EEFD7A1D19B664002D15C4 /* MTTypesetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		49EEFD7D1D19B664002D15C4 /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EEFD7B1D19B664002D15C4 /* MTTypesetter.m */; };
 		99E4269B279B240A000B80DC /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42699279B240A000B80DC /* MTUnicode.m */; };
-		99E4269C279B240A000B80DC /* MTUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E4269A279B240A000B80DC /* MTUnicode.h */; };
+		99E4269C279B240A000B80DC /* MTUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E4269A279B240A000B80DC /* MTUnicode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E4269D279B24FC000B80DC /* MTFont+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DEC80B1CEF1028000053CD /* MTFont+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		99E4269E279B2501000B80DC /* MTMathListDisplayInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EEFD7E1D19B94C002D15C4 /* MTMathListDisplayInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D94FE3531B90DD29002D11E2 /* MTMathUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EECF417DAED9000939107 /* MTMathUILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94FE3541B90DE46002D11E2 /* MTMathListDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EECF317DAED9000939107 /* MTMathListDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94FE3551B90DE5B002D11E2 /* MTMathList.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EED0217DAEDB500939107 /* MTMathList.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -319,11 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94FE3541B90DE46002D11E2 /* MTMathListDisplay.h in Headers */,
-				99E4269C279B240A000B80DC /* MTUnicode.h in Headers */,
-				49DEC8B81CF77B00000053CD /* MTMathListIndex.h in Headers */,
 				D94FE3591B90DE91002D11E2 /* MTMathListBuilder.h in Headers */,
 				D94FE3531B90DD29002D11E2 /* MTMathUILabel.h in Headers */,
+				99E4269C279B240A000B80DC /* MTUnicode.h in Headers */,
+				99E4269D279B24FC000B80DC /* MTFont+Internal.h in Headers */,
+				49DEC8B81CF77B00000053CD /* MTMathListIndex.h in Headers */,
 				D94FE3551B90DE5B002D11E2 /* MTMathList.h in Headers */,
+				99E4269E279B2501000B80DC /* MTMathListDisplayInternal.h in Headers */,
 				49DEC8061CED71C3000053CD /* MTFont.h in Headers */,
 				49EEFD7C1D19B664002D15C4 /* MTTypesetter.h in Headers */,
 			);
