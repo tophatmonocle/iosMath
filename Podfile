@@ -4,17 +4,7 @@ workspace 'iosMath.xcworkspace'
 
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'IosMath' do
-  project 'iosMath.xcodeproj'
-  pod 'iosMath', :path => './'
-end
-
 target 'iosMathTests' do
   project 'iosMath.xcodeproj'
-  pod 'iosMath', :path => './'
-end
-
-target 'MacOSMath' do
-  project 'MacOSMath.xcodeproj'
   pod 'iosMath', :path => './'
 end
