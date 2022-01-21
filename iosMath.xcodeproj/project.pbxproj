@@ -179,7 +179,9 @@
 		4987307717D546800041B02B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				99E42740279B4662000B80DC /* PrivateHeaders */,
+				99E426A1279B26FA000B80DC /* MTTypesetter.h */,
+				99E426A2279B26FA000B80DC /* MTMathListDisplayInternal.h */,
+				99E426A7279B26FA000B80DC /* MTFont+Internal.h */,
 				99E42733279B4429000B80DC /* PublicHeaders */,
 				99E426C1279B26FA000B80DC /* MTUnicode.m */,
 				99E426C2279B26FA000B80DC /* MTMathAtomFactory.m */,
@@ -314,16 +316,6 @@
 				99E426B8279B26FA000B80DC /* UIColor+HexString.h */,
 			);
 			path = PublicHeaders;
-			sourceTree = "<group>";
-		};
-		99E42740279B4662000B80DC /* PrivateHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				99E426A1279B26FA000B80DC /* MTTypesetter.h */,
-				99E426A2279B26FA000B80DC /* MTMathListDisplayInternal.h */,
-				99E426A7279B26FA000B80DC /* MTFont+Internal.h */,
-			);
-			path = PrivateHeaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
