@@ -27,7 +27,6 @@
 		49965F1F17CBBA2700A555C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49965EFF17CBBA2700A555C5 /* UIKit.framework */; };
 		49965F2017CBBA2700A555C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49965F0117CBBA2700A555C5 /* Foundation.framework */; };
 		49A27B0918EBF5B30030B7EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A27B0718EBF5B30030B7EF /* InfoPlist.strings */; };
-		49DA6BC719A062A30086B19F /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DA6BC619A062A30086B19F /* MTUnicode.m */; };
 		49DEC8061CED71C3000053CD /* MTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DEC8041CED71C3000053CD /* MTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49DEC8071CED71C3000053CD /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEC8051CED71C3000053CD /* MTFont.m */; };
 		49DEC8151CF3C69E000053CD /* xits-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DEC80F1CF3C69E000053CD /* xits-math.plist */; };
@@ -40,7 +39,8 @@
 		49DEC8B81CF77B00000053CD /* MTMathListIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DEC8B61CF77B00000053CD /* MTMathListIndex.h */; };
 		49EEFD7C1D19B664002D15C4 /* MTTypesetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EEFD7A1D19B664002D15C4 /* MTTypesetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		49EEFD7D1D19B664002D15C4 /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EEFD7B1D19B664002D15C4 /* MTTypesetter.m */; };
-		ABDD73F920727C6AD917DE8C /* libPods-IosMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC2A6CE091BF4E52FB18759 /* libPods-IosMath.a */; };
+		99E4269B279B240A000B80DC /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42699279B240A000B80DC /* MTUnicode.m */; };
+		99E4269C279B240A000B80DC /* MTUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E4269A279B240A000B80DC /* MTUnicode.h */; };
 		D94FE3531B90DD29002D11E2 /* MTMathUILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EECF417DAED9000939107 /* MTMathUILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94FE3541B90DE46002D11E2 /* MTMathListDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EECF317DAED9000939107 /* MTMathListDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94FE3551B90DE5B002D11E2 /* MTMathList.h in Headers */ = {isa = PBXBuildFile; fileRef = 492EED0217DAEDB500939107 /* MTMathList.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,7 +61,6 @@
 
 /* Begin PBXFileReference section */
 		11BDFD1AB91580A33D83C75E /* libPods-iosMathExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC2A6CE091BF4E52FB18759 /* libPods-IosMath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosMath.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33459E3F7CC9ECC36CCA7414 /* libPods-iosMathTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosMathTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		490465BE1D23DA8400F82033 /* MTTypesetterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTypesetterTest.m; sourceTree = "<group>"; };
 		492EECF317DAED9000939107 /* MTMathListDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplay.h; sourceTree = "<group>"; };
@@ -93,8 +92,6 @@
 		49B83EEF17CE71AC0014B739 /* MTMathListBuilderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilderTest.m; sourceTree = "<group>"; };
 		49B83EF217CE74620014B739 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		49B83EF517CF046A0014B739 /* MTMathListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListTest.m; sourceTree = "<group>"; };
-		49DA6BC319A05F850086B19F /* MTUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTUnicode.h; path = ../../../iosMath/iosMath/lib/MTUnicode.h; sourceTree = "<group>"; };
-		49DA6BC619A062A30086B19F /* MTUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTUnicode.m; path = ../../../iosMath/iosMath/lib/MTUnicode.m; sourceTree = "<group>"; };
 		49DEC8041CED71C3000053CD /* MTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFont.h; sourceTree = "<group>"; };
 		49DEC8051CED71C3000053CD /* MTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFont.m; sourceTree = "<group>"; };
 		49DEC80B1CEF1028000053CD /* MTFont+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTFont+Internal.h"; sourceTree = "<group>"; };
@@ -110,8 +107,8 @@
 		49EEFD7B1D19B664002D15C4 /* MTTypesetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTypesetter.m; sourceTree = "<group>"; };
 		49EEFD7E1D19B94C002D15C4 /* MTMathListDisplayInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplayInternal.h; sourceTree = "<group>"; };
 		964660A84E6FEDD150C994C8 /* Pods-iosMathTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests.release.xcconfig"; sourceTree = "<group>"; };
-		99A8F92EC4DF3CF679128A9A /* Pods-IosMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosMath.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosMath/Pods-IosMath.release.xcconfig"; sourceTree = "<group>"; };
-		9A5455DACB2137080F07C35F /* Pods-IosMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosMath.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosMath/Pods-IosMath.debug.xcconfig"; sourceTree = "<group>"; };
+		99E42699279B240A000B80DC /* MTUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTUnicode.m; sourceTree = "<group>"; };
+		99E4269A279B240A000B80DC /* MTUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTUnicode.h; sourceTree = "<group>"; };
 		B16B9A63054AE3FFB5C36F6B /* Pods-iosMathExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.release.xcconfig"; sourceTree = "<group>"; };
 		BB4250423755E0D3CD2BA614 /* Pods-iosMathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D93290960585498BBAEE4535 /* Pods-iosMathExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,7 +125,6 @@
 				498730AA17D548D40041B02B /* CoreText.framework in Frameworks */,
 				498730A917D548CA0041B02B /* UIKit.framework in Frameworks */,
 				4987307617D546800041B02B /* Foundation.framework in Frameworks */,
-				ABDD73F920727C6AD917DE8C /* libPods-IosMath.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +199,6 @@
 				49A27B0218EBF5B30030B7EF /* CoreFoundation.framework */,
 				11BDFD1AB91580A33D83C75E /* libPods-iosMathExample.a */,
 				33459E3F7CC9ECC36CCA7414 /* libPods-iosMathTests.a */,
-				2EC2A6CE091BF4E52FB18759 /* libPods-IosMath.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +226,8 @@
 		49965F3817CBBABD00A555C5 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				99E4269A279B240A000B80DC /* MTUnicode.h */,
+				99E42699279B240A000B80DC /* MTUnicode.m */,
 				49DEC8B51CF77B00000053CD /* MTMathListIndex.m */,
 				49DEC8B61CF77B00000053CD /* MTMathListIndex.h */,
 				492EED0017DAEDB500939107 /* MTMathAtomFactory.h */,
@@ -239,8 +236,6 @@
 				492EED0317DAEDB500939107 /* MTMathList.m */,
 				492EED0417DAEDB500939107 /* MTMathListBuilder.h */,
 				492EECFF17DAEDB500939107 /* MTMathListBuilder.m */,
-				49DA6BC319A05F850086B19F /* MTUnicode.h */,
-				49DA6BC619A062A30086B19F /* MTUnicode.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -312,8 +307,6 @@
 				B16B9A63054AE3FFB5C36F6B /* Pods-iosMathExample.release.xcconfig */,
 				BB4250423755E0D3CD2BA614 /* Pods-iosMathTests.debug.xcconfig */,
 				964660A84E6FEDD150C994C8 /* Pods-iosMathTests.release.xcconfig */,
-				9A5455DACB2137080F07C35F /* Pods-IosMath.debug.xcconfig */,
-				99A8F92EC4DF3CF679128A9A /* Pods-IosMath.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -326,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94FE3541B90DE46002D11E2 /* MTMathListDisplay.h in Headers */,
+				99E4269C279B240A000B80DC /* MTUnicode.h in Headers */,
 				49DEC8B81CF77B00000053CD /* MTMathListIndex.h in Headers */,
 				D94FE3591B90DE91002D11E2 /* MTMathListBuilder.h in Headers */,
 				D94FE3531B90DD29002D11E2 /* MTMathUILabel.h in Headers */,
@@ -342,12 +336,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4987309717D546800041B02B /* Build configuration list for PBXNativeTarget "IosMath" */;
 			buildPhases = (
-				00751CBA850B394CF00637E0 /* [CP] Check Pods Manifest.lock */,
 				4987307117D546800041B02B /* Sources */,
 				D94FE3521B90DD1F002D11E2 /* Headers */,
 				4987307217D546800041B02B /* Frameworks */,
 				4987307317D546800041B02B /* CopyFiles */,
-				BE16EC5EE0D22CA00CCD3131 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +400,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 49965EF317CBBA2700A555C5;
@@ -448,24 +441,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00751CBA850B394CF00637E0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IosMath-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2A6BF4D73475A64FE2BB8DAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,24 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE16EC5EE0D22CA00CCD3131 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IosMath/Pods-IosMath-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath-iOS/mathFonts.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IosMath/Pods-IosMath-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6253ABF539A9D25D25B1108 /* [CP] Copy Pods Resources */ = {
@@ -536,7 +493,7 @@
 				49DEC8B71CF77B00000053CD /* MTMathListIndex.m in Sources */,
 				49DEC8071CED71C3000053CD /* MTFont.m in Sources */,
 				492EED0D17DAEDDD00939107 /* MTMathAtomFactory.m in Sources */,
-				49DA6BC719A062A30086B19F /* MTUnicode.m in Sources */,
+				99E4269B279B240A000B80DC /* MTUnicode.m in Sources */,
 				492EED0E17DAEDDD00939107 /* MTMathList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,7 +539,6 @@
 /* Begin XCBuildConfiguration section */
 		4987309317D546800041B02B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A5455DACB2137080F07C35F /* Pods-IosMath.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/iosMathLib.dst;
@@ -596,7 +552,6 @@
 		};
 		4987309417D546800041B02B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99A8F92EC4DF3CF679128A9A /* Pods-IosMath.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/iosMathLib.dst;
