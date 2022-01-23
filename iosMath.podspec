@@ -15,7 +15,7 @@ beautifully rendered math equations in iOS/MacOS applications.
   s.source       = { :git => "https://github.com/tophatmonocle/iosMath.git", :tag => s.version.to_s }
   s.source_files = 'Sources/**/*.{h,m}'
   s.public_header_files = 'Sources/PublicHeaders/*.h'
-  s.resource = 'Sources/MathFonts.bundle'
+  s.resource_bundle = { 'iosMath_iosMath' => 'Sources/MathFonts.bundle' }
   s.frameworks = "CoreGraphics", "QuartzCore", "CoreText", "UIKit"
   s.requires_arc = true
 end
