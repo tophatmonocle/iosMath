@@ -18,7 +18,7 @@ let package = Package(
             name: "iosMath",
             path: "Sources",
             resources: [
-                .process("MathFonts.bundle")
+                .copy("MathFonts.bundle")
             ],
             publicHeadersPath: "PublicHeaders"
         ),
