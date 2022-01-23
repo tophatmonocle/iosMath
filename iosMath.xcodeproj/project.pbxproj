@@ -19,7 +19,6 @@
 		498730AD17D549A00041B02B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49965F0317CBBA2700A555C5 /* CoreGraphics.framework */; };
 		49965F1F17CBBA2700A555C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49965EFF17CBBA2700A555C5 /* UIKit.framework */; };
 		49965F2017CBBA2700A555C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49965F0117CBBA2700A555C5 /* Foundation.framework */; };
-		49A27B0918EBF5B30030B7EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A27B0718EBF5B30030B7EF /* InfoPlist.strings */; };
 		99E426C7279B26FA000B80DC /* MTTypesetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E426A1279B26FA000B80DC /* MTTypesetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		99E426C8279B26FA000B80DC /* MTMathListDisplayInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E426A2279B26FA000B80DC /* MTMathListDisplayInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		99E426CD279B26FA000B80DC /* MTFont+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E426A7279B26FA000B80DC /* MTFont+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -56,12 +55,7 @@
 		99E4272F279B39EE000B80DC /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E426AB279B26FA000B80DC /* MTFont.m */; };
 		99E42730279B39EE000B80DC /* MTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E426AC279B26FA000B80DC /* MTLabel.m */; };
 		99E42731279B39EE000B80DC /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E426AD279B26FA000B80DC /* UIColor+HexString.m */; };
-		99E4273A279B462F000B80DC /* latinmodern-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E42734279B462F000B80DC /* latinmodern-math.plist */; };
-		99E4273B279B462F000B80DC /* xits-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99E42735279B462F000B80DC /* xits-math.otf */; };
-		99E4273C279B462F000B80DC /* xits-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E42736279B462F000B80DC /* xits-math.plist */; };
-		99E4273D279B462F000B80DC /* latinmodern-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99E42737279B462F000B80DC /* latinmodern-math.otf */; };
-		99E4273E279B462F000B80DC /* texgyretermes-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E42738279B462F000B80DC /* texgyretermes-math.plist */; };
-		99E4273F279B462F000B80DC /* texgyretermes-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99E42739279B462F000B80DC /* texgyretermes-math.otf */; };
+		99E4274D279CE636000B80DC /* MathFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99E4274A279CE59B000B80DC /* MathFonts.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,10 +82,7 @@
 		49965F1C17CBBA2700A555C5 /* iosMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49965F2517CBBA2700A555C5 /* iosMathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosMathTests-Info.plist"; sourceTree = "<group>"; };
 		49965F2717CBBA2700A555C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		49A27B0118EBF5B30030B7EF /* MathFontBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathFontBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A27B0218EBF5B30030B7EF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		49A27B0618EBF5B30030B7EF /* MathFontBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MathFontBundle-Info.plist"; sourceTree = "<group>"; };
-		49A27B0818EBF5B30030B7EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49B83EEF17CE71AC0014B739 /* MTMathListBuilderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilderTest.m; sourceTree = "<group>"; };
 		49B83EF217CE74620014B739 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		49B83EF517CF046A0014B739 /* MTMathListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListTest.m; sourceTree = "<group>"; };
@@ -132,12 +123,7 @@
 		99E426C3279B26FA000B80DC /* MTMathList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathList.m; sourceTree = "<group>"; };
 		99E426C4279B26FA000B80DC /* MTMathListBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilder.m; sourceTree = "<group>"; };
 		99E426C5279B26FA000B80DC /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
-		99E42734279B462F000B80DC /* latinmodern-math.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "latinmodern-math.plist"; path = "Sources/Fonts/latinmodern-math.plist"; sourceTree = SOURCE_ROOT; };
-		99E42735279B462F000B80DC /* xits-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "xits-math.otf"; path = "Sources/Fonts/xits-math.otf"; sourceTree = SOURCE_ROOT; };
-		99E42736279B462F000B80DC /* xits-math.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "xits-math.plist"; path = "Sources/Fonts/xits-math.plist"; sourceTree = SOURCE_ROOT; };
-		99E42737279B462F000B80DC /* latinmodern-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "latinmodern-math.otf"; path = "Sources/Fonts/latinmodern-math.otf"; sourceTree = SOURCE_ROOT; };
-		99E42738279B462F000B80DC /* texgyretermes-math.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "texgyretermes-math.plist"; path = "Sources/Fonts/texgyretermes-math.plist"; sourceTree = SOURCE_ROOT; };
-		99E42739279B462F000B80DC /* texgyretermes-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "texgyretermes-math.otf"; path = "Sources/Fonts/texgyretermes-math.otf"; sourceTree = SOURCE_ROOT; };
+		99E4274A279CE59B000B80DC /* MathFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MathFonts.bundle; path = Fonts/MathFonts.bundle; sourceTree = "<group>"; };
 		B16B9A63054AE3FFB5C36F6B /* Pods-iosMathExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.release.xcconfig"; sourceTree = "<group>"; };
 		BB4250423755E0D3CD2BA614 /* Pods-iosMathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D93290960585498BBAEE4535 /* Pods-iosMathExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,19 +152,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49A27AFE18EBF5B30030B7EF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4987307717D546800041B02B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				99E4274A279CE59B000B80DC /* MathFonts.bundle */,
 				99E426A1279B26FA000B80DC /* MTTypesetter.h */,
 				99E426A2279B26FA000B80DC /* MTMathListDisplayInternal.h */,
 				99E426A7279B26FA000B80DC /* MTFont+Internal.h */,
@@ -210,7 +190,6 @@
 				49B83EF217CE74620014B739 /* CoreText.framework */,
 				4987307717D546800041B02B /* Sources */,
 				49965F2317CBBA2700A555C5 /* iosMathTests */,
-				49A27B0418EBF5B30030B7EF /* MathFontBundle */,
 				49965EFE17CBBA2700A555C5 /* Frameworks */,
 				49965EFD17CBBA2700A555C5 /* Products */,
 				673C67F49848EC78C5FD29E0 /* Pods */,
@@ -222,7 +201,6 @@
 			children = (
 				49965F1C17CBBA2700A555C5 /* iosMathTests.xctest */,
 				4987307517D546800041B02B /* libIosMath.a */,
-				49A27B0118EBF5B30030B7EF /* MathFontBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,29 +234,6 @@
 			children = (
 				49965F2517CBBA2700A555C5 /* iosMathTests-Info.plist */,
 				49965F2617CBBA2700A555C5 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		49A27B0418EBF5B30030B7EF /* MathFontBundle */ = {
-			isa = PBXGroup;
-			children = (
-				99E42737279B462F000B80DC /* latinmodern-math.otf */,
-				99E42734279B462F000B80DC /* latinmodern-math.plist */,
-				99E42739279B462F000B80DC /* texgyretermes-math.otf */,
-				99E42738279B462F000B80DC /* texgyretermes-math.plist */,
-				99E42735279B462F000B80DC /* xits-math.otf */,
-				99E42736279B462F000B80DC /* xits-math.plist */,
-				49A27B0518EBF5B30030B7EF /* Supporting Files */,
-			);
-			path = MathFontBundle;
-			sourceTree = "<group>";
-		};
-		49A27B0518EBF5B30030B7EF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				49A27B0618EBF5B30030B7EF /* MathFontBundle-Info.plist */,
-				49A27B0718EBF5B30030B7EF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -359,6 +314,7 @@
 				D94FE3521B90DD1F002D11E2 /* Headers */,
 				4987307217D546800041B02B /* Frameworks */,
 				4987307317D546800041B02B /* CopyFiles */,
+				99E4274C279CE632000B80DC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -388,23 +344,6 @@
 			productReference = 49965F1C17CBBA2700A555C5 /* iosMathTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		49A27B0018EBF5B30030B7EF /* MathFontBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49A27B0D18EBF5B30030B7EF /* Build configuration list for PBXNativeTarget "MathFontBundle" */;
-			buildPhases = (
-				49A27AFD18EBF5B30030B7EF /* Sources */,
-				49A27AFE18EBF5B30030B7EF /* Frameworks */,
-				49A27AFF18EBF5B30030B7EF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MathFontBundle;
-			productName = MathFontBundle;
-			productReference = 49A27B0118EBF5B30030B7EF /* MathFontBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -429,7 +368,6 @@
 			targets = (
 				49965F1B17CBBA2700A555C5 /* iosMathTests */,
 				4987307417D546800041B02B /* IosMath */,
-				49A27B0018EBF5B30030B7EF /* MathFontBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -443,17 +381,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49A27AFF18EBF5B30030B7EF /* Resources */ = {
+		99E4274C279CE632000B80DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E4273C279B462F000B80DC /* xits-math.plist in Resources */,
-				99E4273B279B462F000B80DC /* xits-math.otf in Resources */,
-				99E4273F279B462F000B80DC /* texgyretermes-math.otf in Resources */,
-				99E4273D279B462F000B80DC /* latinmodern-math.otf in Resources */,
-				99E4273A279B462F000B80DC /* latinmodern-math.plist in Resources */,
-				49A27B0918EBF5B30030B7EF /* InfoPlist.strings in Resources */,
-				99E4273E279B462F000B80DC /* texgyretermes-math.plist in Resources */,
+				99E4274D279CE636000B80DC /* MathFonts.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +417,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosMathTests/Pods-iosMathTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+				"${PODS_ROOT}/../Sources/Fonts/MathFonts.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MathFonts.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -532,13 +464,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49A27AFD18EBF5B30030B7EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -546,14 +471,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				49965F2717CBBA2700A555C5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		49A27B0718EBF5B30030B7EF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49A27B0818EBF5B30030B7EF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -702,64 +619,6 @@
 			};
 			name = Release;
 		};
-		49A27B0B18EBF5B30030B7EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "MathFontBundle/MathFontBundle-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tactile-Learning.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		49A27B0C18EBF5B30030B7EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "MathFontBundle/MathFontBundle-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tactile-Learning.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -786,15 +645,6 @@
 			buildConfigurations = (
 				49965F3217CBBA2700A555C5 /* Debug */,
 				49965F3317CBBA2700A555C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49A27B0D18EBF5B30030B7EF /* Build configuration list for PBXNativeTarget "MathFontBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49A27B0B18EBF5B30030B7EF /* Debug */,
-				49A27B0C18EBF5B30030B7EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
