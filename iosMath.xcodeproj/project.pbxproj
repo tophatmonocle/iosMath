@@ -55,7 +55,12 @@
 		99E4272F279B39EE000B80DC /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E426AB279B26FA000B80DC /* MTFont.m */; };
 		99E42730279B39EE000B80DC /* MTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E426AC279B26FA000B80DC /* MTLabel.m */; };
 		99E42731279B39EE000B80DC /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E426AD279B26FA000B80DC /* UIColor+HexString.m */; };
-		99E4274D279CE636000B80DC /* MathFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99E4274A279CE59B000B80DC /* MathFonts.bundle */; };
+		99E42778279E1713000B80DC /* texgyretermes-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E42772279E1713000B80DC /* texgyretermes-math.plist */; };
+		99E42779279E1713000B80DC /* latinmodern-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99E42773279E1713000B80DC /* latinmodern-math.otf */; };
+		99E4277A279E1713000B80DC /* xits-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99E42774279E1713000B80DC /* xits-math.otf */; };
+		99E4277B279E1713000B80DC /* texgyretermes-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99E42775279E1713000B80DC /* texgyretermes-math.otf */; };
+		99E4277C279E1713000B80DC /* latinmodern-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E42776279E1713000B80DC /* latinmodern-math.plist */; };
+		99E4277D279E1713000B80DC /* xits-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E42777279E1713000B80DC /* xits-math.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -123,7 +128,12 @@
 		99E426C3279B26FA000B80DC /* MTMathList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathList.m; sourceTree = "<group>"; };
 		99E426C4279B26FA000B80DC /* MTMathListBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilder.m; sourceTree = "<group>"; };
 		99E426C5279B26FA000B80DC /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
-		99E4274A279CE59B000B80DC /* MathFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MathFonts.bundle; path = Fonts/MathFonts.bundle; sourceTree = "<group>"; };
+		99E42772279E1713000B80DC /* texgyretermes-math.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "texgyretermes-math.plist"; sourceTree = "<group>"; };
+		99E42773279E1713000B80DC /* latinmodern-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "latinmodern-math.otf"; sourceTree = "<group>"; };
+		99E42774279E1713000B80DC /* xits-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "xits-math.otf"; sourceTree = "<group>"; };
+		99E42775279E1713000B80DC /* texgyretermes-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "texgyretermes-math.otf"; sourceTree = "<group>"; };
+		99E42776279E1713000B80DC /* latinmodern-math.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "latinmodern-math.plist"; sourceTree = "<group>"; };
+		99E42777279E1713000B80DC /* xits-math.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "xits-math.plist"; sourceTree = "<group>"; };
 		B16B9A63054AE3FFB5C36F6B /* Pods-iosMathExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.release.xcconfig"; sourceTree = "<group>"; };
 		BB4250423755E0D3CD2BA614 /* Pods-iosMathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathTests/Pods-iosMathTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D93290960585498BBAEE4535 /* Pods-iosMathExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMathExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosMathExample/Pods-iosMathExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +168,7 @@
 		4987307717D546800041B02B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				99E4274A279CE59B000B80DC /* MathFonts.bundle */,
+				99E42771279E1713000B80DC /* Fonts */,
 				99E426A1279B26FA000B80DC /* MTTypesetter.h */,
 				99E426A2279B26FA000B80DC /* MTMathListDisplayInternal.h */,
 				99E426A7279B26FA000B80DC /* MTFont+Internal.h */,
@@ -273,6 +283,19 @@
 			path = PublicHeaders;
 			sourceTree = "<group>";
 		};
+		99E42771279E1713000B80DC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				99E42772279E1713000B80DC /* texgyretermes-math.plist */,
+				99E42773279E1713000B80DC /* latinmodern-math.otf */,
+				99E42774279E1713000B80DC /* xits-math.otf */,
+				99E42775279E1713000B80DC /* texgyretermes-math.otf */,
+				99E42776279E1713000B80DC /* latinmodern-math.plist */,
+				99E42777279E1713000B80DC /* xits-math.plist */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -385,7 +408,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E4274D279CE636000B80DC /* MathFonts.bundle in Resources */,
+				99E4277B279E1713000B80DC /* texgyretermes-math.otf in Resources */,
+				99E4277A279E1713000B80DC /* xits-math.otf in Resources */,
+				99E42778279E1713000B80DC /* texgyretermes-math.plist in Resources */,
+				99E4277C279E1713000B80DC /* latinmodern-math.plist in Resources */,
+				99E4277D279E1713000B80DC /* xits-math.plist in Resources */,
+				99E42779279E1713000B80DC /* latinmodern-math.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +445,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosMathTests/Pods-iosMathTests-resources.sh",
-				"${PODS_ROOT}/../Sources/Fonts/MathFonts.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/iosMath_iosMath.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MathFonts.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/iosMath_iosMath.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
