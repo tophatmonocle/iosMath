@@ -1,0 +1,26 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence
+# More information see https://help.github.com/articles/about-codeowners/
+
+# Our goal is not to exhaustively document code ownership via CODEOWNERS,
+# only to use it for areas that are sensitive enough to justify the
+# gatekeeping oversight (both the overhead for the team owning it, and the
+# additional drag it causes on other teams when they contribute to it).
+
+# When making changes, do so in a separate PR and list the changes and the
+# reasons why in the PR description. Thanks!
+
+# Possible rules
+# * @team1 --> Own everything in the repo
+# *.js @team2 --> Own every js file in the repo
+# /src/js/ @team3--> Own every file and all subdirectories in /src/js/
+# /src/*  @team4 --> Own every file in src/, but NOT the subdirectories
+# /src/*.md  @team5 @team6 --> Both team5 and team6 own all markdown files in /src/ (note no comma)
+
+# Syntax reference:
+# https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
+
+# Rules are overwritten by ones appearing later in the file
+
+# default owner
+* @tophatmonocle/mobile
